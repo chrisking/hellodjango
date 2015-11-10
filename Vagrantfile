@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
-     sudo apt-get install python-pip python-dev build-essential git-core postgresql libpg-dev
+     sudo apt-get install -y python-pip python-dev build-essential git-core libpq-dev postgresql postgresql-contrib
      sudo pip install --upgrade virtualenv
      sudo pip install virtualenvwrapper
      echo "# Python Info" >> ~/.bashrc
