@@ -70,8 +70,5 @@ Vagrant.configure(2) do |config|
      sudo apt-get install -y python-pip python-dev build-essential git-core libpq-dev postgresql postgresql-contrib
      sudo pip install --upgrade virtualenv
      sudo pip install virtualenvwrapper
-     echo "# Python Info" >> ~/.bashrc
-     echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
-     echo ". /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
   SHELL
 end
